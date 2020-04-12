@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.ncd
+OUTFILE=/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/sfn/Documents/xilinx/project/BinaryCounter
+LICENSE=WebPack
+USER_INFO=211822358_0_0_311

@@ -1,0 +1,5 @@
+
+
+NET "rst" LOC = P74;
+NET "clk" LOC = P55;
+NET "led[0]" LOC = P92;

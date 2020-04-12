@@ -1,0 +1,6 @@
+[Inputs]
+clk
+rst
+[Outputs]
+=led[7:0]=
+[BiDir]
