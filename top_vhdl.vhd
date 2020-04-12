@@ -1,26 +1,23 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity top_vhdl is
   port(
-    clk : in STD_LOGIC;
-    led   : out STD_LOGIC_VECTOR (7 to 0)
+    led         : out std_logic (7 to 0);
+    clk, rst    : in std_logic
   );
 end top_vhdl;
 
 architecture Behavioral of top_vhdl is
-  component ClockDivider is
-    port(
-      clkin, rst  : in STD_LOGIC;
-      clkout      : out STD_LOGIC
-    );
-  end component;
+
+  signal clkout : std_logic := '1';
+
 begin
 
-  bin_counter : ClockDivider port map(
-    clkin => clk;
-    rst => '1';
-    clkout => clk
+  bin_count : entity work.ClockDivider(Behavioral) port map(
+    clkin   => clk,
+    reset   => rst,
+    clkout  => clkout
   );
 
 end Behavioral;

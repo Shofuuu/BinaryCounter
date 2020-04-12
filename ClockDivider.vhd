@@ -1,12 +1,12 @@
 -- Divider clock for 50MHz external crystal
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity ClockDivider is
   port (
-    clkin, reset  : in STD_LOGIC;
-    clkout        : out STD_LOGIC
+    clkout        : out std_logic;
+    clkin, reset  : in std_logic
   );
 end ClockDivider;
 
@@ -25,7 +25,7 @@ begin
     if(reset = '1') then
       count <= 1;
       rst <= '0';
-    elsif(clk = '1') then
+    elsif(clkin = '1') then
       if(count = 50000000) then
         count <= 1;
         rst <= not rst;
