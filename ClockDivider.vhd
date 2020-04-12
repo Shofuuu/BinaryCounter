@@ -8,9 +8,9 @@ entity ClockDivider is
     clkin, reset  : in STD_LOGIC;
     clkout        : out STD_LOGIC
   );
-end entity;
+end ClockDivider;
 
-architecture ClockDivider of ClockDivider is
+architecture Behavioral of ClockDivider is
 
   -- local variable
   -- cara kerja :
@@ -26,7 +26,7 @@ begin
       count <= 1;
       rst <= '0';
     elsif(clk = '1') then
-      if(count = 50000000)
+      if(count = 50000000) then
         count <= 1;
         rst <= not rst;
       end if;
@@ -35,4 +35,4 @@ begin
 
     clkout <= rst;
   end process;
-end architecture;
+end Behavioral;
