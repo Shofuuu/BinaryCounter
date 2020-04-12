@@ -30,7 +30,7 @@ begin
     elsif(clkin'event and clkin = '1') then
       count <= count+1;
 
-      if(count = 50000) then
+      if(count = 24999999) then
         count <= 1;
         rst <= not rst;
       end if;

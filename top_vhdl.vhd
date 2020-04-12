@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
 
 entity top_vhdl is
   port(
@@ -16,12 +17,20 @@ architecture RTL of top_vhdl is
     clkin, reset  : in std_logic
   );
   end component;
-  signal clk_out : std_logic;
-  signal counter : integer := 1;
+  signal clk_out : std_logic := '0';
+  signal counter : std_logic_vector (7 downto 0);
 
 begin
 
   bin_counter : ClockDivider port map(clk_out, clk, rst);
-  led(0) <= clk_out;
+  process(clk_out, rst)
+  begin
+    if (rst = '1') then
+      counter <= "00000000"; -- double quote untuk vector
+    elsif (clk_out'event and clk_out = '1') then
+      counter <= counter + 1;
+      led <= not counter;
+    end if;
+  end process;
 
 end architecture;
