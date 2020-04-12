@@ -10,14 +10,17 @@ end top_vhdl;
 
 architecture Behavioral of top_vhdl is
 
-  signal clkout : std_logic := '1';
+  component ClockDivider is
+    port (
+      clkout        : out std_logic;
+      clkin, reset  : in std_logic
+    );
+  end component;
+
+  signal clk_out : std_logic;
 
 begin
 
-  bin_count : entity work.ClockDivider(Behavioral) port map(
-    clkin   => clk,
-    reset   => rst,
-    clkout  => clkout
-  );
+  bin_count : ClockDivider port map(clk_out, clk, rst);
 
 end Behavioral;

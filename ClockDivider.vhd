@@ -1,4 +1,4 @@
--- Divider clock for 50MHz external crystal
+-- Divider clock for 50MHz external crystal to 1Hz
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -20,19 +20,24 @@ architecture Behavioral of ClockDivider is
   signal rst: std_logic := '0'; -- rst sebagai clock set reset 0/1
 
 begin
+
   process(clkin, reset)
   begin
+
     if(reset = '1') then
       count <= 1;
       rst <= '0';
-    elsif(clkin = '1') then
+    elsif(clkin'event and clkin = '1') then
       if(count = 50000000) then
         count <= 1;
         rst <= not rst;
       end if;
+
       count <= count+1;
     end if;
 
     clkout <= rst;
+
   end process;
+
 end Behavioral;

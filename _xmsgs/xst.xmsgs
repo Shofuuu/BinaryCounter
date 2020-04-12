@@ -5,28 +5,28 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="535" delta="new" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 6: Index constraint prefix <arg fmt="%s" index="1">std_logic</arg> should be an array type
+<msg type="error" file="HDLCompiler" num="535" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 6: Index constraint prefix <arg fmt="%s" index="1">std_logic</arg> should be an array type
 </msg>
 
-<msg type="error" file="HDLCompiler" num="854" delta="new" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 4: Unit &lt;<arg fmt="%s" index="1">top_vhdl</arg>&gt; ignored due to previous errors.
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 4: Unit &lt;<arg fmt="%s" index="1">top_vhdl</arg>&gt; ignored due to previous errors.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="374" delta="new" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 11: Entity &lt;<arg fmt="%s" index="1">top_vhdl</arg>&gt; is not yet compiled.
+<msg type="error" file="HDLCompiler" num="374" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 11: Entity &lt;<arg fmt="%s" index="1">top_vhdl</arg>&gt; is not yet compiled.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 13: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 15: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 18: &lt;<arg fmt="%s" index="1">clk</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 16: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 19: &lt;<arg fmt="%s" index="1">rst</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 20: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 20: &lt;<arg fmt="%s" index="1">clkout</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 24: &lt;<arg fmt="%s" index="1">clk_out</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="192" delta="new" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 20: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">clkout</arg> cannot be an expression
+<msg type="error" file="HDLCompiler" num="192" delta="old" >"/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.vhd" Line 24: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">clkout</arg> cannot be an expression
 </msg>
 
 </messages>
