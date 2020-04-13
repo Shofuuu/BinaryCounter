@@ -27,6 +27,7 @@ begin
   begin
     if (rst = '1') then
       counter <= "00000000"; -- double quote untuk vector
+      led <= "11111111";
     elsif (clk_out'event and clk_out = '1') then
       counter <= counter + 1;
       led <= not counter;
