@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-13T18:48:50</DateModified>
+  <DateModified>2020-04-14T12:10:11</DateModified>
   <ModuleName>top_vhdl</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/sfn/Documents/xilinx/project/BinaryCounter/iseconfig/top_vhdl.xreport</SavedFilePath>

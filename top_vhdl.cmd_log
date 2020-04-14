@@ -161,3 +161,15 @@ map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off top_vhdl_map.ncd top_vhdl.ncd top_vhdl.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_vhdl.twx top_vhdl.ncd -o top_vhdl.twr top_vhdl.pcf -ucf pinmap.ucf 
 bitgen -intstyle ise -f top_vhdl.ut top_vhdl.ncd 
+xst -intstyle ise -ifn "/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.xst" -ofn "/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinmap.ucf -p xc6slx9-tqg144-2 top_vhdl.ngc top_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_vhdl_map.ncd top_vhdl.ngd top_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off top_vhdl_map.ncd top_vhdl.ncd top_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_vhdl.twx top_vhdl.ncd -o top_vhdl.twr top_vhdl.pcf -ucf pinmap.ucf 
+bitgen -intstyle ise -f top_vhdl.ut top_vhdl.ncd 
+xst -intstyle ise -ifn "/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.xst" -ofn "/home/sfn/Documents/xilinx/project/BinaryCounter/top_vhdl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinmap.ucf -p xc6slx9-tqg144-2 top_vhdl.ngc top_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_vhdl_map.ncd top_vhdl.ngd top_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off top_vhdl_map.ncd top_vhdl.ncd top_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_vhdl.twx top_vhdl.ncd -o top_vhdl.twr top_vhdl.pcf -ucf pinmap.ucf 
+bitgen -intstyle ise -f top_vhdl.ut top_vhdl.ncd 

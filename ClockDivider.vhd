@@ -30,6 +30,9 @@ begin
     elsif(clkin'event and clkin = '1') then
       count <= count+1;
 
+      -- Formula fout = ((fosc/n)/2)-1
+      -- fosc = external crystal
+      -- n = new frequency
       if(count = 24999999) then
         count <= 1;
         rst <= not rst;

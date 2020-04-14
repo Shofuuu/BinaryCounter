@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-term::  Mon Apr 13 18:53:38 2020
+term::  Tue Apr 14 12:38:43 2020
 
 par -w -intstyle ise -ol high -mt off top_vhdl_map.ncd top_vhdl.ncd
 top_vhdl.pcf 
@@ -99,11 +99,11 @@ Finished initial Timing Analysis.  REAL time: 4 secs
 Starting Router
 
 
-Phase  1  : 302 unrouted;      REAL time: 4 secs 
+Phase  1  : 302 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 254 unrouted;      REAL time: 4 secs 
+Phase  2  : 254 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 27 unrouted;      REAL time: 4 secs 
+Phase  3  : 27 unrouted;      REAL time: 5 secs 
 
 Phase  4  : 27 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
@@ -119,8 +119,8 @@ Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
-Total REAL time to Router completion: 5 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Total REAL time to Router completion: 6 secs 
 Total CPU time to Router completion: 5 secs 
 
 Partition Implementation Status
@@ -161,7 +161,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 5 secs 
+Total REAL time to PAR completion: 6 secs 
 Total CPU time to PAR completion: 5 secs 
 
 Peak Memory Usage:  607 MB

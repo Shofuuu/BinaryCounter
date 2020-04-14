@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Reading design: top_vhdl.prj
@@ -122,7 +122,7 @@ Parsing architecture <RTL> of entity <top_vhdl>.
 Elaborating entity <top_vhdl> (architecture <RTL>) from library <work>.
 
 Elaborating entity <ClockDivider> (architecture <RTL>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/sfn/Documents/xilinx/project/BinaryCounter/ClockDivider.vhd" Line 39: rst should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/sfn/Documents/xilinx/project/BinaryCounter/ClockDivider.vhd" Line 42: rst should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -445,8 +445,8 @@ clk            |    4.728|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.43 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.22 secs
  
 --> 
 
